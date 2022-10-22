@@ -1,0 +1,159 @@
+
+2022-10-21 18:53:41,386 INFO: errors [in /Users/akshatap/udacity/fswd/FSND/projects/01_fyyur/starter_code/app.py:509]
+2022-10-21 18:54:54,873 INFO: errors [in app.py:509]
+2022-10-21 18:57:45,211 INFO: errors [in app.py:510]
+2022-10-21 18:59:42,688 ERROR: Exception on /venues/create [GET] [in /Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/flask/app.py:1441]
+Traceback (most recent call last):
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/flask/app.py", line 2051, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/flask/app.py", line 1501, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/flask/app.py", line 1499, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/flask/app.py", line 1485, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 221, in create_venue_form
+    def create_venue_form():
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/flask_wtf/form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/flask_wtf/form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/wtforms/form.py", line 286, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/wtforms/form.py", line 127, in process
+    field.process(formdata, data, extra_filters=field_extra_filters)
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/wtforms/csrf/core.py", line 44, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/flask_wtf/csrf.py", line 141, in generate_csrf_token
+    token_key=self.meta.csrf_field_name
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/flask_wtf/csrf.py", line 35, in generate_csrf
+    message='A secret key is required to use CSRF.'
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/flask_wtf/csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2022-10-21 19:00:18,898 ERROR: Exception on /venues/create [GET] [in /Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/flask/app.py:1441]
+Traceback (most recent call last):
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/flask/app.py", line 2051, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/flask/app.py", line 1501, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/flask/app.py", line 1499, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/flask/app.py", line 1485, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 221, in create_venue_form
+    def create_venue_form():
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/flask_wtf/form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/flask_wtf/form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/wtforms/form.py", line 286, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/wtforms/form.py", line 127, in process
+    field.process(formdata, data, extra_filters=field_extra_filters)
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/wtforms/csrf/core.py", line 44, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/flask_wtf/csrf.py", line 141, in generate_csrf_token
+    token_key=self.meta.csrf_field_name
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/flask_wtf/csrf.py", line 35, in generate_csrf
+    message='A secret key is required to use CSRF.'
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/flask_wtf/csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2022-10-21 19:00:20,402 ERROR: Exception on /venues/create [GET] [in /Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/flask/app.py:1441]
+Traceback (most recent call last):
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/flask/app.py", line 2051, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/flask/app.py", line 1501, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/flask/app.py", line 1499, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/flask/app.py", line 1485, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 221, in create_venue_form
+    def create_venue_form():
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/flask_wtf/form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/flask_wtf/form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/wtforms/form.py", line 286, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/wtforms/form.py", line 127, in process
+    field.process(formdata, data, extra_filters=field_extra_filters)
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/wtforms/csrf/core.py", line 44, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/flask_wtf/csrf.py", line 141, in generate_csrf_token
+    token_key=self.meta.csrf_field_name
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/flask_wtf/csrf.py", line 35, in generate_csrf
+    message='A secret key is required to use CSRF.'
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/flask_wtf/csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2022-10-21 19:00:25,151 ERROR: Exception on /venues/create [GET] [in /Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/flask/app.py:1441]
+Traceback (most recent call last):
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/flask/app.py", line 2051, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/flask/app.py", line 1501, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/flask/app.py", line 1499, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/flask/app.py", line 1485, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 221, in create_venue_form
+    def create_venue_form():
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/flask_wtf/form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/flask_wtf/form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/wtforms/form.py", line 286, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/wtforms/form.py", line 127, in process
+    field.process(formdata, data, extra_filters=field_extra_filters)
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/wtforms/csrf/core.py", line 44, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/flask_wtf/csrf.py", line 141, in generate_csrf_token
+    token_key=self.meta.csrf_field_name
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/flask_wtf/csrf.py", line 35, in generate_csrf
+    message='A secret key is required to use CSRF.'
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/flask_wtf/csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2022-10-21 19:01:05,384 ERROR: Exception on /venues/create [GET] [in /Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/flask/app.py:1441]
+Traceback (most recent call last):
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/flask/app.py", line 2051, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/flask/app.py", line 1501, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/flask/app.py", line 1499, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/flask/app.py", line 1485, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 221, in create_venue_form
+    def create_venue_form():
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/flask_wtf/form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/flask_wtf/form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/wtforms/form.py", line 286, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/wtforms/form.py", line 127, in process
+    field.process(formdata, data, extra_filters=field_extra_filters)
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/wtforms/csrf/core.py", line 44, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/flask_wtf/csrf.py", line 141, in generate_csrf_token
+    token_key=self.meta.csrf_field_name
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/flask_wtf/csrf.py", line 35, in generate_csrf
+    message='A secret key is required to use CSRF.'
+  File "/Users/akshatap/PycharmProjects/starter_code/lib/python3.7/site-packages/flask_wtf/csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
